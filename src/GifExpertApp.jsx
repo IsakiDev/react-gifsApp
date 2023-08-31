@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { AddCategory, GifGrid } from './components'
 
 export function GifExpertApp () {
-  const [categories, setCategories] = useState([''])
+  const [categories, setCategories] = useState([])
 
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return
@@ -19,17 +19,18 @@ export function GifExpertApp () {
         />
       </header>
 
-      <ul>
-        {
-          categories.map(category => (
-            <GifGrid
-              key={category}
-              category={category}
-            />
-            // <li key={category}>{category}</li>
-          ))
-        }
-      </ul>
+      <main>
+        <ul>
+          {
+            categories.map(category => (
+              <GifGrid
+                key={category}
+                category={category}
+              />
+            ))
+          }
+        </ul>
+      </main>
     </>
   )
 }
