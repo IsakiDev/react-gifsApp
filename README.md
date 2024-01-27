@@ -7,7 +7,7 @@
 ```
 npm i
 ```
-2. Create ``.env`` and add the property ``REACT_APP_API_KEY`` with your API_KEY from Giphy
+2. Create ``.env`` and add ``REACT_APP_API_KEY`` property with your API_KEY from Giphy
 3. Run application
 ```
 npm run dev
